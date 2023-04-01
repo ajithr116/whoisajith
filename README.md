@@ -1,2 +1,4 @@
 # portfolio
-trying to create my own portfolio website
+trying to create my own portfolio websites
+
+Open : https://ajithr116.github.io/portfolio/
