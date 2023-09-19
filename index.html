@@ -3,23 +3,34 @@
 
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body 
+            {
+                font-family: Arial, sans-serif;
+                background-color: #232323;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+        <title>Netflix Home</title>
+    
+        <meta name="description" content="LinkedIn home page">
+        <meta name="author" content="Ajith R">
+        <meta name="keywords" content="HTML, CSS, JavaScript, bootstrap">
+        <!-- <meta http-equiv="refresh" content="30"> -->
+        <meta name="keywords" content="HTML, CSS, bootstrap, javascript netflix home page">
+        <link rel="shortcut icon" href="images/logo.png">
+        <!-- Defer the Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" defer></script>
+        <!-- Defer other non-critical JavaScript here if needed -->
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
 
-    <!-- Font Awesome CDN  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-        crossorigin="anonymous" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <title>Ajith R </title>
-</head>
-
+    </head>
 <body>
     <!-- Further code here →
    <nav id="navbar" class="navbar"><a href="#"></a></nav>
@@ -28,12 +39,13 @@
     <!--=============== NAVIGATION MENU ===============-->
 
     <div class="menu">
-        <a href="#welcome-section" class="menu-icon fas fa-home"></a>
+        <a href="#welcome-section" class="menu-icon fas fa-door-open"></a>
         <a href="#about" class="menu-icon fas fa-user"></a>
+        <a href="#skills" class="menu-icon fas fa-cogs"></a>
+        <a href="#home" class="menu-icon fas fa-home"></a>
         <a href="#projects" class="menu-icon fas fa-code"></a>
         <a href="#experience" class="menu-icon fas fa-briefcase"></a>
-        <a href="#contact" class="menu-icon fas fa-envelope"></a>
-        
+        <a href="#contact" class="menu-icon fas fa-envelope"></a>  
     </div>
 
     <!--=============== MAIN "WINDOW" ===============-->
@@ -41,12 +53,12 @@
     <div class="portfolio">
         <!--=============== HEADER SECTION ===============-->
 
-        <section class="header">
+        <section class="header" id="home">
             <img class="header-img"
-                src="image/download.png"
+                src="image/charasor.jpg"
                 alt="" />
-            <h1>Ajith R</h1>
-            <h2>Full Stack Developer</h2>
+            <h1 >Ajith R</h1clas>
+            <h2>Developer</h2>
             <div class="socials">
                 <a href="www.linkedin.com/in/ajithr116" target="_blank" class="fab fa-linkedin-in" id="profile-link"></a>
                 <a href="https://github.com/ajithr116" target="_blank" class="fab fa-github"></a>
@@ -55,7 +67,7 @@
                 <a href="https://link.medium.com/z4sAc3ZRDyb" target="_blank" class="fab fa-medium"></a>
                 <a href="#" target="_blank" class="fab fa-whatsapp"></a>
                 <a href="https://pin.it/4bQGqji" target="_blank" class="fab fa-pintrest"></a>
-
+                
             </div>
             <a href="https://github.com/ajithr116/portfolio/raw/main/image/resume.pdf" class="cta">DownIoad CV</a>
         </section>
@@ -66,40 +78,38 @@
             <!--=============== HOME ===============-->
 
             <section class="content-card home" id="welcome-section">
-                <h1>Hello, I am Ajith R</h1>
+                <h1 class="">Hello, I am Ajith R</h1>
             </section>
 
             <!--=============== ABOUT ME ===============-->
 
             <section class="content-card about" id="about">
                 <h1>Hello U</h1>
-                <div class="about-item about-me">
-                    <p>
-                        Iam Ajith. i love building tools that are user-frendly, simple and delightfull.
-                    </p>
-                    <p>
-                        I'am currently persuing my bachelor's degree in computer application. and i use my spare time to learn new things. I also started a design blog , medium and more where i share my inspirations , tuturiols and resources.
-                    </p>
+                <div class="align-items-center justify-content-center">
+                    <p class="fs-5">Iam Ajith R. i love building tools that are user-frendly, simple and delightfull.</p>
+                    <p class="fs-5">I'am currently learning web development and i use my spare time to learn new things.</p>
                 </div>
-     
-               
+            </section>
+
+            <!-- skills -->
+            <section class="content-card about" id="skills">
                 <div class="col-2">
-                    <div class="about-item skills">
+                    <div>
                         <h1>Skills</h1>
-                        <span class="skill">HTML</span>
-                        <span class="skill">CSS</span>
-                        <span class="skill">JavaScript</span>
-                        <span class="skill">React</span>
-                        <span class="skill">SQL</span>
-                        <a href="https://www.google.com"><span class="skill">GitHub</span></a>
+                        <span class="skill p-3">HTML</span>
+                        <span class="skill p-3">CSS</span>
+                        <span class="skill p-3">JavaScript</span>
+                        <span class="skill p-3">Bootstrap</span>
+                        <span class="skill p-3">SQL</span>
+                        <span class="skill p-3">C++</span>
+                        <span class="skill p-3">Java</span>
                     </div>
 
-
-                    <div class="about-item languages">
+                    <div>  
                         <h1>Languages</h1>
-                        <div class="language">
+                        <!-- <div class="language">
                             <p>english</p>
-                            <span class="bar"><span class="english"></span></span>
+                            <span class="progress-bar" width="70"><span class="english"></span></span>
                         </div>
                         <div class="language">
                             <p>malayalam</p>
@@ -112,6 +122,21 @@
                         <div class="language">
                             <p>hindi</p>
                             <span class="bar"><span class="hindi"></span></span>
+                        </div> -->
+                        <div class="progress my-3">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%">malayalam</div>
+                        </div>
+                        <div class="progress my-2">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%">English</div>
+                        </div>
+                        <div class="progress my-3">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%">Tamil</div>
+                        </div>
+                        <div class="progress my-3">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:15%">Kanada</div>
+                        </div>
+                        <div class="progress my-3">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:15%">Hindi</div>
                         </div>
                     </div>
                 </div>
@@ -119,7 +144,7 @@
 
             <!--=============== PROJECTS ===============-->
 
-            <section class="content-card projects" id="projects">
+            <section class="content-card" id="projects">
                 <h1>Projects</h1>
                 <div class="col-2 project-list">
                     <div class="project-tile">
@@ -136,7 +161,7 @@
                         </div>
                     </div>
                     <div class="project-tile">
-                        <img src="image/download (4).jpeg"
+                        <img src="image/piplab.jpg"
                             alt="" />
                         <div class="overlay">
                             <div class="project-description">
@@ -149,7 +174,7 @@
                         </div>
                     </div>
                     <div class="project-tile">
-                        <img src="image/download (5).jpeg"
+                        <img src="image//glaceon.jpg"
                             alt="" />
                         <div class="overlay">
                             <div class="project-description">
@@ -162,7 +187,7 @@
                         </div>
                     </div>
                     <div class="project-tile">
-                        <img src="image/download (6).jpeg"
+                        <img src="image/ghost.jpg"
                             alt="" />
                         <div class="overlay">
                             <div class="project-description">
@@ -241,26 +266,24 @@
             </section>
         </div>
     </div>
-</div>
 
     <script src="script.js"></script>
     <script>
-        var swiper = new swiper('.carousal',
-{
-    navigation:
-    {
-        nextEl:'.swiper-button-next',
-        prevEl:'.swiper-button-prev'
-    },
-    pagination:
-    {
-        el:'.swiper-pagination',
-    },
-})
+         var swiper = new swiper('.carousal',
+        {
+            navigation:
+            {
+                nextEl:'.swiper-button-next',
+                prevEl:'.swiper-button-prev'
+            },
+            pagination:
+            {
+                el:'.swiper-pagination',
+            },
+        });
     </script>
 </body>
 
 </html>
-
 
 
